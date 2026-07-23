@@ -1,0 +1,52 @@
+.why {
+  background: #f8f9fa;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 42px;
+  color: #0077b6;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  flex: 1 1 220px;
+  max-width: 260px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
