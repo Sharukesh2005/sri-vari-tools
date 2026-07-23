@@ -17,6 +17,8 @@ import GranitePolishingBuff from "./pages/GranitePolishingBuff";
 import CircularSawBladeSegments from "./pages/CircularSawBladeSegments";
 import IndustrialAbrasives from "./pages/IndustrialAbrasives";
 
+import WhatsAppButton from "./components/common/WhatsAppButton";
+
 import "./App.css";
 
 function HomePage() {
@@ -67,6 +69,8 @@ function App() {
           element={<IndustrialAbrasives />}
         />
       </Routes>
+
+      <WhatsAppButton />
     </>
   );
 }
