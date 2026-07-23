@@ -1,6 +1,8 @@
 import diamond from "../assets/products/diamond.jpg";
 import laser from "../assets/products/granite.jpg";
 import graniteBuff from "../assets/products/marble.jpg";
+import segments from "../assets/products/diamond.jpg";
+import abrasives from "../assets/products/abrasives.jpg";
 
 const products = {
   diamondCircularSawBlades: {
@@ -152,8 +154,7 @@ const products = {
       },
     },
   },
-
-  granitePolishingBuff: {
+    granitePolishingBuff: {
     id: "granite-polishing-buff",
 
     name: "Granite Polishing Buff",
@@ -226,6 +227,184 @@ const products = {
         diameter: "100 mm",
         thickness: "10 mm",
         application: "Premium Mirror Finish",
+      },
+    },
+  },
+
+  circularSawBladeSegments: {
+    id: "circular-saw-blade-segments",
+
+    name: "Circular Saw Blade Segments",
+
+    description:
+      "Premium quality diamond circular saw blade segments manufactured for cutting granite, marble, sandstone, concrete and other natural stones with excellent cutting speed, long life and superior performance.",
+
+    image: segments,
+
+    specifications: {
+      "24 mm": {
+        image: segments,
+        length: "24 mm",
+        width: "3.2 mm",
+        height: "10 mm",
+        application: "Granite Cutting",
+      },
+
+      "40 mm": {
+        image: segments,
+        length: "40 mm",
+        width: "3.6 mm",
+        height: "12 mm",
+        application: "Granite & Marble",
+      },
+
+      "42 mm": {
+        image: segments,
+        length: "42 mm",
+        width: "4.0 mm",
+        height: "12 mm",
+        application: "Stone Cutting",
+      },
+
+      "50 mm": {
+        image: segments,
+        length: "50 mm",
+        width: "4.2 mm",
+        height: "12 mm",
+        application: "Heavy Duty Granite",
+      },
+
+      "60 mm": {
+        image: segments,
+        length: "60 mm",
+        width: "4.5 mm",
+        height: "15 mm",
+        application: "Industrial Cutting",
+      },
+    },
+  },
+
+  industrialAbrasives: {
+    id: "industrial-abrasives",
+
+    name: "Industrial Abrasives",
+
+    description:
+      "Industrial abrasives are designed for grinding, polishing and finishing granite, marble and engineered stone surfaces, providing high durability and consistent performance.",
+
+    image: abrasives,
+
+    specifications: {
+      "24": {
+        image: abrasives,
+        grit: "24",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Heavy Grinding",
+      },
+
+      "36": {
+        image: abrasives,
+        grit: "36",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Rough Grinding",
+      },
+
+      "46": {
+        image: abrasives,
+        grit: "46",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Surface Grinding",
+      },
+
+      "60": {
+        image: abrasives,
+        grit: "60",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Fine Grinding",
+      },
+
+      "80": {
+        image: abrasives,
+        grit: "80",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Stone Finishing",
+      },
+
+      "120": {
+        image: abrasives,
+        grit: "120",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Pre Polishing",
+      },
+
+      "220": {
+        image: abrasives,
+        grit: "220",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Smooth Finish",
+      },
+
+      "320": {
+        image: abrasives,
+        grit: "320",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Fine Finish",
+      },
+
+      "400": {
+        image: abrasives,
+        grit: "400",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Pre Polish",
+      },
+
+      "600": {
+        image: abrasives,
+        grit: "600",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Gloss Finish",
+      },
+
+      "800": {
+        image: abrasives,
+        grit: "800",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "High Gloss",
+      },
+
+      "1000": {
+        image: abrasives,
+        grit: "1000",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Mirror Finish",
+      },
+
+      "1500": {
+        image: abrasives,
+        grit: "1500",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Premium Finish",
+      },
+
+      "3000": {
+        image: abrasives,
+        grit: "3000",
+        diameter: "100 mm",
+        thickness: "10 mm",
+        application: "Ultra Mirror Finish",
       },
     },
   },

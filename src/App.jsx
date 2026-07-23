@@ -2,10 +2,6 @@ import { Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
 
-import DiamondProducts from "./pages/DiamondProducts";
-import LaserProducts from "./pages/LaserProducts";
-import GranitePolishingBuff from "./pages/GranitePolishingBuff";
-
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/home/Hero";
 import About from "./components/home/About";
@@ -14,6 +10,14 @@ import Products from "./components/home/Products";
 import Solutions from "./components/home/Solutions";
 import Contact from "./components/home/Contact";
 import Footer from "./components/layout/Footer";
+
+import DiamondProducts from "./pages/DiamondProducts";
+import LaserProducts from "./pages/LaserProducts";
+import GranitePolishingBuff from "./pages/GranitePolishingBuff";
+import CircularSawBladeSegments from "./pages/CircularSawBladeSegments";
+import IndustrialAbrasives from "./pages/IndustrialAbrasives";
+
+import "./App.css";
 
 function HomePage() {
   return (
@@ -51,6 +55,16 @@ function App() {
         <Route
           path="/granite-polishing-buff"
           element={<GranitePolishingBuff />}
+        />
+
+        <Route
+          path="/circular-saw-blade-segments"
+          element={<CircularSawBladeSegments />}
+        />
+
+        <Route
+          path="/industrial-abrasives"
+          element={<IndustrialAbrasives />}
         />
       </Routes>
     </>
