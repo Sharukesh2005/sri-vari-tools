@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import products from "../data/products";
 
@@ -11,6 +11,8 @@ import "../styles/DiamondProducts.css";
 
 function LaserProducts() {
   const product = products.laserWeldedTuckPointBlades;
+
+  const navigate = useNavigate();
 
   const [selectedSize, setSelectedSize] = useState('4"');
   const [showModal, setShowModal] = useState(false);
@@ -32,9 +34,12 @@ function LaserProducts() {
         </div>
 
         {/* Back Button */}
-        <Link to="/" className="back-btn">
+        <button
+          className="back-btn"
+          onClick={() => navigate(-1)}
+        >
           ← Back to Products
-        </Link>
+        </button>
 
         {/* Page Title */}
         <h1 className="page-title">{product.name}</h1>

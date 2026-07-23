@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import products from "../data/products";
 
@@ -11,6 +11,8 @@ import "../styles/DiamondProducts.css";
 
 function IndustrialAbrasives() {
   const product = products.industrialAbrasives;
+
+  const navigate = useNavigate();
 
   const [selectedGrit, setSelectedGrit] = useState("24");
   const [showModal, setShowModal] = useState(false);
@@ -30,9 +32,12 @@ function IndustrialAbrasives() {
           <span>{product.name}</span>
         </div>
 
-        <Link to="/" className="back-btn">
+        <button
+          className="back-btn"
+          onClick={() => navigate(-1)}
+        >
           ← Back to Products
-        </Link>
+        </button>
 
         <h1 className="page-title">{product.name}</h1>
 
