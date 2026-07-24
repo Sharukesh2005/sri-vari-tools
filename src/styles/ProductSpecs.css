@@ -1,0 +1,42 @@
+.product-specs{
+    margin-top:50px;
+}
+
+.product-specs h2{
+    text-align:center;
+    color:#0a5fb4;
+    margin-bottom:35px;
+    font-size:2rem;
+}
+
+.spec-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.spec-card{
+    background:#fff;
+    border-radius:12px;
+    padding:22px;
+    border:1px solid #e8e8e8;
+    transition:.3s;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+}
+
+.spec-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.spec-card h4{
+    color:#0a5fb4;
+    margin-bottom:12px;
+    font-size:1rem;
+}
+
+.spec-card p{
+    font-size:1.1rem;
+    font-weight:600;
+    color:#333;
+}

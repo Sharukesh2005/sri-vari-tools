@@ -1,41 +1,49 @@
 import "../../styles/Products.css";
 import { Link } from "react-router-dom";
 
-import diamond from "../../assets/products/diamond.jpg";
-import granite from "../../assets/products/granite.jpg";
-import marble from "../../assets/products/marble.jpg";
-import buffing from "../../assets/products/buffing.jpg";
-import abrasives from "../../assets/products/abrasives.jpg";
+// Product Images
+import diamond from "../../assets/products/diamond/supreme/10 inch.jpg";
+import laser from "../../assets/products/laser/cover.jpg";
+import polishingBuff from "../../assets/products/polishing-buff/cover.jpg";
+import segments from "../../assets/products/segments/cover.jpg";
+import smallBlades from "../../assets/products/small-blades/4-inch granite1.jpg";
 
 const products = [
   {
     name: "Diamond Circular Saw Blades",
-    description: "High-performance blades for precision cutting applications.",
+    description:
+      "Premium quality diamond blades engineered for precise cutting of granite, marble and stone.",
     image: diamond,
     link: "/diamond-products",
   },
   {
     name: "Laser Welded Tuck Point Blades",
-    description: "Designed for smooth and efficient cutting applications.",
-    image: granite,
+    description:
+      "Industrial laser welded blades designed for superior strength and cutting efficiency.",
+    image: laser,
     link: "/laser-products",
   },
   {
     name: "Granite Polishing Buff",
-    description: "Premium polishing buff for superior granite finishing.",
-    image: marble,
+    description:
+      "Professional polishing buff for achieving smooth and glossy granite finishes.",
+    image: polishingBuff,
     link: "/granite-polishing-buff",
   },
   {
     name: "Circular Saw Blade Segments",
-    description: "Durable blade segments for industrial cutting solutions.",
-    image: buffing,
+    description:
+      "High-performance diamond segments for heavy-duty industrial cutting applications.",
+    image: segments,
     link: "/circular-saw-blade-segments",
   },
   {
-    name: "Industrial Abrasives",
-    description: "Reliable abrasive solutions for industrial use.",
-    image: abrasives,
+    name: "Small Blades",
+    description:
+      "Compact diamond blades specially designed for cutting granite, ceramic and tile applications.",
+    image: smallBlades,
+
+    // Change this to "/small-blades" after we create that page.
     link: "/industrial-abrasives",
   },
 ];
@@ -43,26 +51,42 @@ const products = [
 function Products() {
   return (
     <section id="products" className="products">
-      <h2>Our Products</h2>
+      <div className="products-container">
+        <div className="section-heading">
+          <span>OUR PRODUCTS</span>
 
-      <div className="product-grid">
-        {products.map((product) => (
-          <div className="product-card" key={product.name}>
-            <img
-              src={product.image}
-              alt={product.name}
-              className="product-image"
-            />
+          <h2>Industrial Diamond Tools</h2>
 
-            <h3>{product.name}</h3>
+          <p>
+            Sri Vari Tools manufactures premium-quality industrial cutting,
+            polishing and finishing tools trusted by professionals across
+            multiple industries.
+          </p>
+        </div>
 
-            <p>{product.description}</p>
+        <div className="product-grid">
+          {products.map((product) => (
+            <div className="product-card" key={product.name}>
+              <div className="product-image-wrapper">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="product-image"
+                />
+              </div>
 
-            <Link to={product.link}>
-              <button>View Products</button>
-            </Link>
-          </div>
-        ))}
+              <div className="product-content">
+                <h3>{product.name}</h3>
+
+                <p>{product.description}</p>
+
+                <Link to={product.link}>
+                  <button>View Product</button>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

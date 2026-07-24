@@ -1,0 +1,37 @@
+.product-cta{
+
+    margin-top:50px;
+
+}
+
+.cta-button{
+
+    background:#0A5FB4;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 42px;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cta-button:hover{
+
+    background:#084D90;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(10,95,180,.25);
+
+}
