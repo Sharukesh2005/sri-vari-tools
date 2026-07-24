@@ -6,7 +6,7 @@ import Footer from "../components/layout/Footer";
 import ProductHero from "../components/product/ProductHero";
 import ProductDetails from "../components/product/ProductDetails";
 
-import products from "../data/products_new";
+import products from "../data/products.js";
 
 import "../styles/DiamondProducts.css";
 
